@@ -1,0 +1,367 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: head;
+    src: url(../Fonts/Ambroise-Regular.otf);
+}
+
+@font-face {
+    font-family: para-roman;
+    src: url(../Fonts/CantoPen-Roman.ttf);
+}
+
+@font-face {
+    font-family: Para;
+    src: url(../Fonts/CantoPen-Light.ttf);
+}
+
+@font-face {
+    font-family: para-bold;
+    src: url(../Fonts/CantoPen-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: anchor;
+    src: url(../Fonts/Futura\ Book\ font.ttf);
+}
+
+header img {
+    height: 60px;
+
+    @media (max-width:992px) {
+        height: 40px;
+    }
+}
+
+header nav{
+    background-color: #fff;
+}
+
+header a {
+    color: #000 !important;
+    font-family: para-bold;
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.banner {
+    margin-top: 4rem;
+    .carousel-inner {
+        height: 550px;
+        width: 100%;
+        .one{
+            background: url(../Images/1-Wedding/7.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 800px;
+        }
+        .two{
+            background: url(../Images/2-Actor/DR-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 800px; 
+        }
+        .three{
+            background: url(../Images/All-section/2.jpg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 800px; 
+        }
+        .four{
+            background: url(../Images/1-Wedding/6.jpg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 800px; 
+        }
+    }
+
+    @keyframes banner-animate {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.about-me {
+    padding: 50px 0px;
+    overflow: hidden;
+
+    .img-wrap {
+        height: 400px;
+       width: 100%;
+        @media (max-width:746px) {
+            height: 390px;
+            width: 390px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            aspect-ratio: 3/3;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+
+    h6 {
+        font-family: anchor;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 21px;
+        font-style: normal;
+        color: #404040;
+    }
+
+    h2 {
+        font-family: para;
+        font-size: 36px;
+        line-height: 40px;
+        font-style: normal;
+        color: #161616;
+
+        span {
+            font-family: head;
+            text-transform: uppercase;
+            color: #404040;
+        }
+    }
+
+    p {
+        font-family: para;
+        font-size: 18px;
+        line-height: 29px;
+        color: #161616;
+        font-style: normal;
+    }
+
+    button {
+        background-color: transparent;
+        padding: 5px 15px;
+        border: none;
+        border: 1px solid #757575;
+        a {
+            text-decoration: none;
+            color: #757575;
+            font-size: 15px;
+            font-family: para-bold;
+            text-transform: uppercase;
+        }
+    }
+    button:hover{
+        background-color: #757575;
+    }
+    button:hover a{
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
+
+.work {
+    padding-bottom: 50px;
+
+    h1 {
+        font-size: 36px;
+        font-family: para;
+        line-height: 43px;
+        color: #161616;
+
+        span {
+            font-family: head;
+            text-transform: uppercase;
+            color: #404040;
+        }
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #757575;
+    }
+
+    .nav-link:hover {
+        color: #161616;
+    }
+
+    li button {
+        font-family: para-bold;
+        color: #161616;
+        font-style: normal;
+    }
+
+    .he-1 {
+        height: auto !important;
+    }
+    .pp{
+        padding: 4px 4px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.sticky-btns {
+    position: fixed;
+    bottom: 0px;
+    z-index: 30000;
+    right: 5px;
+    bottom: 10px;
+}
+
+.testimonials {
+    padding-top: 10px;
+    padding-bottom: 65px;
+    overflow: hidden;
+
+    h2 {
+        font-size: 24px;
+        font-family: para-bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 22px;
+        font-family: head;
+        color: grey;
+        text-transform: uppercase;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        bottom: -50px;
+        top: auto;
+        z-index: 1;
+        width: 15%;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }
+
+    .carousel-control-prev {
+        left: 40%;
+    }
+
+    .carousel-control-next {
+        left: 43%;
+
+        @media (max-width:1053px) {
+            left: 50%;
+        }
+    }
+}
+
+.sub-foot {
+    background-color: #e8e8e8;
+    padding: 15px 0px;
+    overflow: hidden;
+    h2 {
+        font-family: para-roman;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    button {
+        background-color: #c48f56;
+        padding: 5px 15px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Montserrat-500;
+        }
+    }
+    @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    .logos {
+        overflow: hidden;
+        padding: 0 0;
+        white-space: nowrap;
+        position: relative;
+      }
+      
+      
+      .logos-slide {
+        display: inline-block;
+        animation: 30s slide infinite linear;
+      }
+      
+      .logos-slide img {
+        height: 350px;
+        @media (max-width:774px) {
+            height: 280px;
+        }
+        margin: 0 4px;
+      }
+}
+
+.foot {
+    background-color: #f0f0f0;
+    padding: 30px 0px;
+
+    h2 {
+        font-size: 24px;
+        color: #161616;
+        font-family: head;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 14px;
+        color: #161616;
+        font-family: para-bold;
+
+        a {
+            text-decoration: none;
+            color: #161616;
+            font-family: anchor;
+        }
+    }
+
+    span {
+        font-weight: 800;
+        font-family: para-bold;
+        padding-right: 10px;
+    }
+}
+
+.lower-foot {
+    padding: 10px 0px;
+    background-color: #e8e8e8;
+    p {
+        font-size: 14px;
+        color: #161616;
+        font-family: para-bold;
+        text-align: center;
+    }
+}
